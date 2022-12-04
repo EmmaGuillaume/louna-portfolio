@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Helvetica";
+    src: url(./font/Helvetica.ttf), url(./font/Helvetica-Bold.ttf),url(./font/Helvetica-BoldOblique.ttf),url(./font/Helvetica-Oblique.ttf),url(./font/helvetica-light.ttf);
+    
+    }
+
+:root {
+    --white-bg: #FDF8F8;
+    --marron-txt: #362B25;
+  }
+
+.header{
+    font-family: "Helvetica";
+    background-color: var(--white-bg);
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--marron-txt);
+}
