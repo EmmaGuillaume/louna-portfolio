@@ -1,20 +1,103 @@
 @font-face {
     font-family: "Helvetica";
-    src: url(./font/Helvetica.ttf), url(./font/Helvetica-Bold.ttf),url(./font/Helvetica-BoldOblique.ttf),url(./font/Helvetica-Oblique.ttf),url(./font/helvetica-light.ttf);
-    
-    }
+    src: url(./font/Helvetica.ttf), url(./font/Helvetica-Bold.ttf), url(./font/Helvetica-BoldOblique.ttf), url(./font/Helvetica-Oblique.ttf), url(./font/helvetica-light.ttf);
 
+}
+
+
+body{
+    margin: 0;
+}
 :root {
     --white-bg: #FDF8F8;
     --marron-txt: #362B25;
-  }
-
-.header{
-    font-family: "Helvetica";
-    background-color: var(--white-bg);
+    --dark-red: #7F5056;
 }
 
-.header a{
+.header__content {
+    margin: 3vh 8vw 3vh 8vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header__content:not(.header__navbar){
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.header {    
+    position: fixed;
+    background-color: var(--white-bg);
+    font-family: "Helvetica";
+    width: 100%;
+    filter: drop-shadow(0px 1px 4px #00000053);
+
+}
+
+.header a {
     text-decoration: none;
     color: var(--marron-txt);
+}
+
+.header__navbar {
+    display: flex;
+    font-size: 17px;
+    gap: 10vw;
+    font-weight: 500;
+}
+
+.header__navbar a:hover{
+    color: #c67983;
+}
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media screen and (max-width: 715px)
+{
+    .header__navbar{
+        display: none;
+        flex-direction: column;
+        background: var(--white-bg);
+        height: auto;
+        margin: 0vh 0 7vh 0;
+        gap:5vh;
+        width: 50vw;
+        
+    }
+    .header__content a{
+        width: 50%;
+    }
+    .header__content{
+        align-items: center;
+        gap: 10vw;
+        margin: 2vh 8vw 2vh 8vw;
+    }
+    label 
+    {
+        display: flex;
+        margin: 0;
+        font-size: 30px;
+        color: var(--marron-txt);
+        cursor: pointer;
+    }
+    #toggle:checked + .header__navbar {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .header__content{
+
+        gap: 5vw;
+
+    }
+    .header__navbar{
+        width: 75vw;
+
+    }
 }

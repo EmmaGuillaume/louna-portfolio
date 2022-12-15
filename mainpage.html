@@ -43,19 +43,47 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/styleindex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
 </head>
 
 <body>
     <header class="header">
-        <a href="./mainpage.html">Louna Charrieau</a>
-        <section class="header__navbar">
-            <a href="./mainpage.html">Accueil</a>
-            <a href="./mainpage.html">Quelques projets</a>
-            <a href="./mainpage.html">À propos</a>
+
+        <section class="header__content">
+            <a href="./mainpage.html">Louna Charrieau</a>
+            <label label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+
+
+            <nav class="header__navbar">
+                <a href="./mainpage.html">Accueil</a>
+                <a href="./mainpage.html">Quelques projets</a>
+                <a href="./mainpage.html">À propos</a>
+            </nav>
+
         </section>
     </header>
-    <h1>hello louna</h1>
-    <p>txt</p>
+    <section class="homepage">
+        <section class="homepage__container">
+            <img src="./img/louna-charrieau-portrait.png" alt="Portrait de Louna Charrieau">
+            <div class="homepage__title">
+                <h1>LOUNA CHARRIEAU</h1>
+                <div class="homepage__title--line"></div>
+                <h3>Portfolio</h3>
+            </div>
+        </section>
+        <div class="homepage__arrow">
+            <a href="#id"><img src="./img/arrow-down-louna-charrieau.png" alt="flèche bas"></a>
+        </div>
+    </section>
+        
 </body>
 
 </html>
