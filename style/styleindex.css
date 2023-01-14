@@ -3,9 +3,9 @@
     --white-bg: #FDF8F8;
     --marron-txt: #362B25;
     --dark-red: #7F5056;
+    --bleu-bg: #374158;
 }
 .homepage{
-
     padding: 20vh 0 5vh 0;
     width: 100%;
     background-color: var(--white-bg);
@@ -19,23 +19,18 @@
     justify-content: center;
     background-color: var(--white-bg);
     margin-top: 10vh;
-
 }
 .homepage__container{
     display: flex;
     justify-content: space-evenly;
     padding: 0 3vw 0 3vw;
     gap:3vw;
-
 }
-
-
 .homepage__title--line{
     height: 8px;
     width: 75px;
     background-color: var(--marron-txt);
 }
-
 .about{
     margin: 0;
     background-color: var(--dark-red);
@@ -58,23 +53,45 @@
     background-color: #222D41;
     padding: 1vw;
 }
-
+.citation{
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 13vw 8vh 13vw;
+    background-color: var(--bleu-bg);
+    color: var(--white-bg);
+}
+.citation p{
+    font-size: 30px;
+}
+.citation__author{
+    font-size: 20px !important;
+}
+.citation__title{
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 3vh;
+}
+.citation__title--number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border: solid 2px var(--white-bg);
+}
 p{
     font-family: "Poppins";
+    font-size: 20px;
 }
-
 h1{
     font-family: "Literata";
     font-weight: 800;
     font-size: 80px;
 }
-
 h3{
     font-family: "Literata";
     font-weight: 400;
     font-size: 36px;
 }
-
 h2{
     margin: 0;
     font-size: 50px;
@@ -84,6 +101,7 @@ h2{
     .about{
         flex-direction: column;
     }
+    
 }
 @media screen and (max-width:1000px){
     .about__img img{
@@ -106,5 +124,4 @@ h2{
         flex-direction: column;
         padding: 2vw;
     }
-    
 }
